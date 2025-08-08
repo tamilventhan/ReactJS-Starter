@@ -455,7 +455,7 @@ const App = () => {
         </aside>
         {/* Main Content */}
         <div className={`flex-1 p-4 sm:p-6 overflow-y-auto h-[calc(100vh-5rem)] ${mainContentMargin}`}>
-          <main className="space-y-6">
+          <main className="space-y-6 mb-12">
             <section className="mb-8">
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">Welcome {userName}!</h2>
               <div className="flex items-center">
