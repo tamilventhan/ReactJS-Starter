@@ -257,7 +257,7 @@ const App = () => {
               <path d="M2 7L12 12L22 7" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
               <path d="M12 22V12" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
             </svg>
-            <span className="text-xl sm:text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">ALADRIOA</span>
+            <span className="text-xl sm:text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">FHIR 7 R4</span>
           </div>
         </div>
         <div className="flex items-center space-x-4 sm:space-x-6 relative">
@@ -265,6 +265,7 @@ const App = () => {
             onClick={() => console.log('Home clicked')}
             onKeyDown={(e) => handleKeyDown(e, () => console.log('Home clicked'))}
             className={`p-2 rounded-md hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ${isLightMode ? 'text-gray-600' : 'text-gray-300'} transition-all duration-200 hover:scale-105 hover:shadow-md`}
+            title='Home'
             tabIndex={0}
           >
             <Home className="h-6 w-6" />
@@ -465,6 +466,7 @@ const App = () => {
                   onKeyDown={(e) => handleKeyDown(e, toggleAiPrompt)}
                   className={`p-2 rounded-md hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ${isLightMode ? 'text-emerald-500' : 'text-emerald-300'} transition-all duration-200 hover:scale-105 hover:shadow-md ai-prompt-toggle-button`}
                   tabIndex={0}
+                  title="Open AI Assistant"
                 >
                   <Bot className="h-6 w-6" />
                 </button>
@@ -622,6 +624,7 @@ const App = () => {
             onKeyDown={(e) => handleKeyDown(e, toggleAiPrompt)}
             className={`ai-prompt-toggle-button p-2 rounded-full hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ${isLightMode ? 'text-emerald-500' : 'text-emerald-300'} transition-all duration-200 hover:scale-105 hover:shadow-md`}
             tabIndex={0}
+            title="Open AI Assistant"
           >
             <Bot className="h-6 sm:h-8 w-6 sm:w-8" />
           </button>
@@ -633,6 +636,7 @@ const App = () => {
                 onClick={toggleAiPrompt}
                 onKeyDown={(e) => handleKeyDown(e, toggleAiPrompt)}
                 className={`p-1 rounded-md hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ai-prompt-toggle-button ${isLightMode ? 'text-gray-600' : 'text-gray-300'} transition-all duration-200 hover:scale-105 hover:shadow-md`}
+                title="Close AI Assistant"
                 tabIndex={0}
               >
                 <X className="h-5 w-5" />
@@ -672,6 +676,7 @@ const App = () => {
             onKeyDown={(e) => handleKeyDown(e, toggleSupportChat)}
             className={`support-chat-toggle-button p-2 rounded-full hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ${isLightMode ? 'text-emerald-500' : 'text-emerald-300'} transition-all duration-200 hover:scale-105 hover:shadow-md`}
             tabIndex={0}
+            title="Open Support Chat"
           >
             <MessageCircle className="h-6 sm:h-8 w-6 sm:w-8" />
           </button>
@@ -683,6 +688,7 @@ const App = () => {
                 onClick={toggleSupportChat}
                 onKeyDown={(e) => handleKeyDown(e, toggleSupportChat)}
                 className={`p-1 rounded-md hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:text-white ${isLightMode ? 'text-gray-600' : 'text-gray-300'} transition-all duration-200 hover:scale-105 hover:shadow-md`}
+                title='Close Support Chat'
                 tabIndex={0}
               >
                 <X className="h-5 w-5" />
